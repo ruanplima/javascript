@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Verificador de nacionalidade</h1>
+    <section>
+        <label for="pais">Qual seu país de origem?</label>
+        <input type="text" id="pais">
+    </section>
+    <section>
+        <input id="btn" type="button" value="Verificar" onclick="verificar()">
+    </section>
+    <section id="sec">
+
+    </section>
+
+    <script>
+        var button = document.querySelector('input#btn')
+        button.style.margin = `10px 0 0 0`
+        // var section = document.querySelector('section#sec')
+        // section.style.color = `black`
+
+        function verificar(){
+        var section = document.querySelector('section#sec')
+        section.style.color = `black`
+        var $pais = document.getElementById('pais')
+        var p = ($pais.value)
+
+            if(p == 'Brasil' || p == 'brasil'){
+                sec.innerHTML = `<p>Você é Brasileiro!</p>`
+            } else if(p > 0 || p < 0){
+                sec.innerHTML = `<p>[ERRO]</p>`
+                section.style.color = `red`
+            } else if(p == ''){
+                sec.innerHTML = `<p>[ERRO]</p>`
+                section.style.color = `red`
+            } else{
+                sec.innerHTML = `<p>Você é estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
