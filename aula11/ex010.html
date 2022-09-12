@@ -13,13 +13,16 @@
         <input type="number" id="inp">
     </section>
     <section>
-        <input onclick="verificar()" type="button" value="Verificar">
+        <input onclick="verificar()" type="button" value="Verificar" id="btn">
     </section>
     <section id="sec">
 
     </section>
 
     <script>
+        var button = document.getElementById('btn')
+        btn.style.margin = `10px 0 0 0`
+
         function verificar(){
             var v = document.getElementById('inp')
             var vel = Number(v.value)
