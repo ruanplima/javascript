@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Verificador de multas</h1>
+    <section>
+        <label for="inp">Qual a velocidade?</label>
+        <input type="number" id="inp">
+    </section>
+    <section>
+        <input onclick="verificar()" type="button" value="Verificar">
+    </section>
+    <section id="sec">
+
+    </section>
+
+    <script>
+        function verificar(){
+            var v = document.getElementById('inp')
+            var vel = Number(v.value)
+            var sec = document.querySelector('section#sec')
+
+            sec.style.color = `black`
+            sec.innerHTML = `<p>Velocidade detectada de <strong>${vel}KM/H</p></strong>`
+            sec.innerHTML += `<strong>Dirija sempre com sinto de segurança</strong>`
+            if(vel > 65){
+                sec.innerHTML += `<p>Você ultrapassou o limite. <strong>MULTADO</strong>`
+            } else if(vel == 0){
+                sec.innerHTML = `<p>ERRO</p>`
+                sec.style.color = `red`
+            }
+        }
+    </script>
+</body>
+</html>
