@@ -33,7 +33,7 @@
             sec.innerHTML += `<strong>Dirija sempre com sinto de segurança</strong>`
             if(vel > 65){
                 sec.innerHTML += `<p>Você ultrapassou o limite. <strong>MULTADO</strong>`
-            } else if(vel == 0){
+            } else if(vel <= 0){
                 sec.innerHTML = `<p>ERRO</p>`
                 sec.style.color = `red`
             }
