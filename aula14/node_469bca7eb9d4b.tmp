@@ -1,0 +1,18 @@
+// console.log('Vai começar...')
+
+// for (var c = 1;
+//     c <= 3;
+//     c++){
+//         console.log(c)
+//     }
+
+// console.log('Vai terminar...')
+
+var inicio = 0
+var final = 10
+var passo = 2
+var resultado = 0
+
+for( inicio >= final ; resultado = inicio + passo;){
+    console.log(resultado)
+}
