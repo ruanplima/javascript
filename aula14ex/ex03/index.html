@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <label for="number">Início</label>
+            <input min="0" type="number" name="number" id="number">
+
+            <label for="end">Fim</label>
+            <input min="0" type="number" name="end" id="end">
+
+            <label for="jump">Passo</label>
+            <input min="0" type="number" name="jump" id="jump">
+        </div>
+        <div class="but">
+            <input onclick="contar()" type="button" value="Contar">
+        </div>
+        <div>
+            <p id="cont">Preparando contagem...</p>
+        </div>
+    </section>
+    <footer>&copy; Curso em video</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
