@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada</title>
-    <style>
-        input{
-            display: block;
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Tabuada</h1>
-    <section>
+    <section class="sec1">
         <label for="num">Número</label>
         <input type="number" name="number" id="num">
 
         <input onclick="tabuada()" type="button" value="Gerar Tabuada">
     </section>
-    <section>
+    <section class="sec2">
         <select size="10" name="tabuada" id="tabuada">
             <option>Digite um valor acima</option>
         </select>
     </section>
+    <footer>&copy; Curso em video</footer>
 
     <script src="script.js"></script>
 </body>
